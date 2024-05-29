@@ -1,0 +1,52 @@
+1. Q: What AWS service is used for content delivery and caching?
+   A: AWS cloudfront
+2. Q: How can you monitor the performance of your AWS services and resources?
+   A: AWS cloudwatch
+3. Q: What service would you use for a fully managed, PostgreSQL and MySQL-compatible relational database service?
+   A: AWS RDS
+4. Q: Which AWS service provides a managed Kubernetes service?
+   A: AWS EKS
+5. Q: What AWS service is primarily used for object storage?
+   A: AWS S3
+6. Q: What feature in Amazon VPC allows you to connect your VPC to the Internet?
+   A: Internet gateway
+7. Q: Can you run multiple versions of an application simultaneously in Elastic Beanstalk?
+   A: Yes
+8. Q: Does Elastic Beanstalk provide a way to handle environment variables?
+   A: Yes
+9. Q: How can you update an Elastic Beanstalk application?
+   A: You can update your app through the AWS console or through the CLI.
+10. Q: What languages and platforms does Elastic Beanstalk support?
+    A: Java, Node.js, PHP, Python, Ruby, Go, Docker
+
+11. Q: You use Amazon CloudWatch as your primary monitoring system for your web application. After a recent software deployment, your users are getting Intermittent 500 Internal Server Errors when using the web application. You want to create a CloudWatch alarm and notify an on-call engineer when these occur. How can you accomplish this using AWS services? 
+    Answer: E
+    A. Deploy your web application as an AWS Elastic Beanstalk application. Use the default Elastic Beanstalk Cloudwatch metrics to capture 500 Internal Server Errors. Set a CloudWatch alarm on that metric.
+    B. Install a CloudWatch Logs Agent on your servers to stream web application logs to CloudWatch.
+    C. Use Amazon Simple Email Service to notify an on-call engineer when a CloudWatch alarm is triggered.
+    D. Create a CloudWatch Logs group and define metric filters that capture 500 Internal Server Errors.  Set a CloudWatch alarm on that metric.
+    E. Use Amazon Simple Notification Service to notify an on-call engineer when a CloudWatch alarm is triggered.
+
+
+12. Q: You are a Devops Engineer for your company. You are planning on using Cloudwatch for monitoring the resources hosted in AWS. Which of the following can you do with Cloudwatch logs ideally.
+    Answer: A, C
+    A. Stream the log data to Amazon Kinesis for further processing
+    B. Send the log data to AWS Lambda for custom processing
+    C. Stream the log data into Amazon Elasticsearch for any search analysis required.
+    D. Send the data to SQS for further processing.
+
+
+13. Q: You’re building a mobile application game. The application needs permissions for each user to communicate and store data in DynamoDB tables. What is the best method for granting each mobile device that installs your application to access DynamoDB tables for storage when required?
+    Answer: C
+    A. During the install and game configuration process, each user creates an IAM credential and assigns the IAM user to a group with proper permissions to communicate with DynamoDB.
+    B. Create an IAM group that only gives access to your application and the DynamoDB tables. When writing to DynamoDB, include the unique device ID to associate the data with that specific user.
+    C. Create an IAM role with the proper permission policy to communicate with the DynamoDB table. Use web identity federation, which assumes the IAM role using AssumeRoleWithWebIdentity, when the user signs in, granting temporary security credentials using STS.
+    D. Create an Active Directory server and an AD user for each mobile application user. When the user signs in to the AD sign-on, allow the AD server to federate using SAML 2.0 to IAM and assign a role to the AD user assumed with AssumeRoleWithSAML.
+
+
+14. Q: What does the ‘Swap Environment URLs’ feature aid most directly when thinking of AWS Elastic Beanstalk?
+    Answer: D
+    A. Immutable Rolling Deployments
+    B. Mutable Rolling Deployments
+    C. Canary Deployments
+    D. Blue-Green Deployments
